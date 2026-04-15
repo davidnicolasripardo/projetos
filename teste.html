@@ -1,0 +1,27 @@
+<html>
+<head> 
+  <title>quest1</title>
+</head>
+<body>
+  <label>valor 1</label><br>
+  <input type = "text" id = "v1"><br>
+  <label>valor 2</label><br>
+  <input type = "text" id = "v2"><br>
+  <button onclick = "calcular()">calcular</button><br>
+  <div id = "resultado"></div>
+<script>
+
+  function calcular(){
+    let v1 = parseFloat(document.getElementById('v1').value);
+    let v2 = parseFloat(document.getElementById('v2').value);
+    let soma = v1 + v2;
+
+    document.getElementById('resultado').innerHTML = "O resultado é: " + soma;
+
+
+
+  }
+</script>
+  
+</body>
+</html>
