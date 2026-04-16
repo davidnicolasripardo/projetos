@@ -1,0 +1,28 @@
+<html>
+<head> 
+  <title>quest2</title>
+</head>
+<body>
+  <label>valor 1</label><br>
+  <input type = "text" id = "v1"><br>
+  <label>valor 2</label><br>
+  <input type = "text" id = "v2"><br>
+  <label>valor 3</label><br>
+  <input type = "text" id = "v3"><br>
+  <button onclick = "calcular()">calcular</button><br>
+  <div id = "resultado"></div>
+<script>
+
+  function calcular(){
+    let v1 = parseFloat(document.getElementById('v1').value);
+    let v2 = parseFloat(document.getElementById('v2').value);
+    let v3 = parseFloat(document.getElementById('v3').value);
+    let med = (v1 + v2 + v3)/3;
+
+    document.getElementById('resultado').innerHTML = "O resultado é: " + med;
+
+  }
+</script>
+  
+</body>
+</html>
